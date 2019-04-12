@@ -1,0 +1,7 @@
+[ncddns]
+apikey = [insert your API key here]
+apipassword = [insert your API password here]
+customernumber = [insert your customer number here]
+domainname = [insert the domain you want to update here]
+hostname = [insert the name of the subdomain you want to update here]
+ipcheckurl = [insert the website to check for your current public IP, e.g. https://api.ipify.org/]

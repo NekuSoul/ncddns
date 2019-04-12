@@ -1,0 +1,6 @@
+[Unit]
+Description=Updates DynDNS entry
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/ncddns/ncddns.py
