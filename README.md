@@ -6,7 +6,7 @@ Dynamic DNS update client for domains hosted at netcup.
 
 * Updates a single IPv4 DNS record based on the clients public IP address. 
 * Only updates DNS record if the public IP has actually changed.
-* Includes install scripts systemd service and timer for periodically.
+* Includes install script as well as systemd service and timer for periodical updates.
 
 ## Limitations
 
