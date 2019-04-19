@@ -1,5 +1,5 @@
 [Unit]
-Description=Run ncddns.service every hour and at boot
+Description=Run ncddns.service every fifteen minutes and at boot
 
 [Timer]
 OnBootSec=1min
