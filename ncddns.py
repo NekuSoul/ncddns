@@ -42,9 +42,6 @@ except FileNotFoundError:
 if publicip == lastip:
     exit()
 
-with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lastip'), 'w') as ipfile:
-    ipfile.write(publicip)
-
 # Login to netcup API
 netcupapi.login(apikey, apipassword, customernumber)
 result = netcupapi.info_dns_record(domainname)
@@ -62,3 +59,8 @@ if recordid is None:
 # Update DNS record with new IP
 netcupapi.update_dns_record(domainname, recordid, hostname, 'A', publicip)
 netcupapi.logout()
+
+# Update last public ip record
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lastip'), 'w') as ipfile:
+    ipfile.write(publicip)
+
